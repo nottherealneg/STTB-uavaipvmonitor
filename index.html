@@ -827,7 +827,7 @@
     border-radius: 15px;
     overflow: hidden;
     box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-    background: #f8f9fa;
+   
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -844,7 +844,6 @@
 
 /* Custom controls styling */
 .video-player::-webkit-media-controls {
-    background-color: rgba(255, 255, 255, 0.9);
     border-radius: 0 0 15px 15px;
 }
 
@@ -925,12 +924,13 @@
 
         <header class="header">
             <div class="logo">
-                <img src="/images/logo.png" alt="لوگوی شرکت">
+                <a href="http://www.solarttb.com">
+                  <img src="images/logo.png" alt="لوگوی شرکت">
+                </a>
                 <h1 class="company-title">شرکت سولار تابش توان بین‌الملل</h1>
-            </div>
+              </div>
             <nav class="nav-menu">
-                <a href="http://www.solarttb.com" class="nav-item">وبسایت</a>
-                <a href="https://sttbdashboard.pythonanywhere.com" class="nav-item">داشبورد مانیتورینگ هوشمند</a>
+                <a href="https://sttbdashboard.pythonanywhere.com" class="nav-item">ورود به نسخه دمو پنل مانیتورینگ</a>
     
             </nav>
         </header>
@@ -947,12 +947,12 @@
         <!-- Separate Slider Section -->
         <div class="heading-box">
             <div class="slider-container">
-                <div class="slide" style="background-image: url('/images/image4.png')"></div>
+                <div class="slide" style="background-image: url('images/image4.png')"></div>
 
 
 
-                <div class="slide" style="background-image: url('/images/image7.png')"></div>
-                <div class="slide" style="background-image: url('/images/image2.png')"></div>
+                <div class="slide" style="background-image: url('images/image7.png')"></div>
+                <div class="slide" style="background-image: url('images/image2.png')"></div>
                 
             
             </div>
@@ -994,7 +994,7 @@
                     <!-- First Video -->
                     <div class="video-container">
                         <video class="video-player" controls preload="metadata">
-                            <source src="/videos/video1.MP4" type="video/mp4">
+                            <source src="videos/video1.MP4" type="video/mp4">
                             Your browser does not support the video tag.
                         </video>
                         <div class="loading-spinner"></div>
@@ -1004,7 +1004,7 @@
                     <!-- Second Video -->
                     <div class="video-container">
                         <video class="video-player" controls preload="metadata">
-                            <source src="/videos/video11.MP4" type="video/mp4">
+                            <source src="videos/video11.MP4" type="video/mp4">
                             Your browser does not support the video tag.
                         </video>
                         <div class="loading-spinner"></div>
@@ -1058,8 +1058,8 @@
                 <!-- Second Slider Section -->
                 <div class="heading-box">
                     <div class="slider-container">
-                        <div class="slide" style="background-image: url('/images/image10.png')"></div>
-                        <div class="slide" style="background-image: url('/images/image11.png')"></div>
+                        <div class="slide" style="background-image: url('images/image10.png')"></div>
+                        <div class="slide" style="background-image: url('images/image11.png')"></div>
                     </div>
             
                     <!-- Navigation Arrows -->
@@ -1102,7 +1102,7 @@
                 <div class="videos-wrapper">
                     <div class="video-container">
                         <video class="video-player" controls preload="metadata">
-                            <source src="/videos/video5.MP4" type="video/mp4">
+                            <source src="videos/video5.MP4" type="video/mp4">
                             Your browser does not support the video tag.
                         </video>
                         <div class="loading-spinner"></div>
@@ -1138,7 +1138,7 @@
                     <!-- First Video -->
                     <div class="video-container">
                         <video class="video-player" controls preload="metadata">
-                            <source src="/videos/video2.MP4" type="video/mp4">
+                            <source src="/Users/negin/Documents/Projects/STTB/STTB-uavaipvmonitor/STTB-uavaipvmonitor/videos/video2.MP4" type="video/mp4">
                             Your browser does not support the video tag.
                         </video>
                         <div class="loading-spinner"></div>
@@ -1148,7 +1148,7 @@
                     <!-- Second Video -->
                     <div class="video-container">
                         <video class="video-player" controls preload="metadata">
-                            <source src="/videos/video3.MP4" type="video/mp4">
+                            <source src="/Users/negin/Documents/Projects/STTB/STTB-uavaipvmonitor/STTB-uavaipvmonitor/videos/video3.MP4" type="video/mp4">
                             Your browser does not support the video tag.
                         </video>
                         <div class="loading-spinner"></div>
@@ -1179,9 +1179,9 @@
                 <!-- Second Slider Section -->
                 <div class="heading-box">
                     <div class="slider-container">
-                        <div class="slide" style="background-image: url('/images/image13.png')"></div>
-                        <div class="slide" style="background-image: url('/images/image15.png')"></div>
-                        <div class="slide" style="background-image: url('/images/image14.jpg')"></div>
+                        <div class="slide" style="background-image: url('images/image13.png')"></div>
+                        <div class="slide" style="background-image: url('images/image15.png')"></div>
+                        <div class="slide" style="background-image: url('images/image14.jpg')"></div>
 
                     </div>
             
@@ -1222,7 +1222,7 @@
 
                     <div class="video-container">
                         <video class="video-player" controls preload="metadata">
-                            <source src="/videos/video4.MP4" type="video/mp4">
+                            <source src="videos/video4.MP4" type="video/mp4">
                             Your browser does not support the video tag.
                         </video>
                         <div class="loading-spinner"></div>
@@ -1367,7 +1367,6 @@
 
         //  slider position and states
         function updateSlider() {
-            // For RTL, use positive transform
             slider.style.transform = `translateX(${currentSlide * 100}%)`;
             updateDots();
             updateProgressBar();
@@ -1383,7 +1382,7 @@
         //  progress bar separately
         function updateProgressBar() {
             progressBar.style.width = '0%';
-            void progressBar.offsetWidth; // Trigger reflow
+            void progressBar.offsetWidth; 
             progressBar.style.width = '100%';
             progressBar.style.transition = `width ${autoplayDuration}ms linear`;
         }
@@ -1510,7 +1509,7 @@
         }
     };
 
-    // Initialize animations.
+    // Initialize animations
     const observer = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
